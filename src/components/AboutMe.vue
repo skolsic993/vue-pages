@@ -43,7 +43,7 @@ export default {
   name: "AboutMe",
   methods: {
     download() {
-      axios.get('http://localhost:8080/pdf/resume.pdf', {
+      axios.get('http://localhost:8080/static/resume.pdf', {
         responseType: 'blob',
       }).then(response => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
