@@ -1,30 +1,66 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+<body>
+  <div>
+    <Navbar />
+    <transition 
+    mode="out-in"
+    enter-active-class="animate__animated animate__fadeIn"
+    leave-active-class="animate__animated animate__fadeOut">
+      <router-view></router-view>
+    </transition>
   </div>
-  <router-view />
+</body>
 </template>
 
+<script>
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Navbar from './components/Navbar'
+
+export default {
+  name: "App",
+  components: {
+    Navbar
+  }
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "./assets/scss/variables.scss";
+
+* {
+  margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+body {
+  background-color: $background;
+  background-image: url('./assets/body.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.animate__animated{
+  --animate-duration: 3s;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 1s;
+  transition-property: opacity;
+  transition-timing-function: ease-in;
+}
+
+.fade-enter-active {
+  transition-delay: .5s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

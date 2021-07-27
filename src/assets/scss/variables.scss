@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+$font: 'Playfair Display', serif;
+$li-font: 'Open Sans Condensed', sans-serif;
+$header-font: 'Open Sans', sans-serif;
+$page-header: 'Playfair Display', serif;
+$navfont: 'Baloo Paaji 2', cursive;
+$weird-font: "Cotham",sans-serif;
+$heading-color: #F3F2F4;
+$light-text: #afaaf8;
+$nice-blue: #00b4ff;
+$white: #fff;
+$green: #31da8c;
+$background: #6937ff;
+$color-cover: #ccf2ff;
+$dark: #18033C;
+$blue: #420FE7;
+$pink: #ce7a9a;
+$background-project: #E4809C;
+
+.paragraph {
+  margin-bottom: 0;
+  color: $color-cover;
+  line-height: 30px;
+  font-weight: 300;
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+  }
+}
