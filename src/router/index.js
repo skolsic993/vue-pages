@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     component: () =>
       import("../views/Projects.vue"),
   },
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound,
+  }
 ];
 
 const router = createRouter({
