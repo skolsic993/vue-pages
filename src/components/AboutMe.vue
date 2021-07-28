@@ -239,7 +239,7 @@ p {
 
   .copied {
     position: relative;
-    left: -100px;
+    left: -140px;
     opacity: 0;
     font-family: $header-font;
     color: $heading-color;
