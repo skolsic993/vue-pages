@@ -27,7 +27,11 @@ $background-project: #E4809C;
   line-height: 30px;
   font-weight: 300;
 
-  @media (max-width: 560px) {
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 400px) and (max-width: 560px) {
     font-size: 14px;
   }
 }

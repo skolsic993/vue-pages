@@ -43,7 +43,7 @@ export default {
   name: "AboutMe",
   methods: {
     download() {
-      axios.get('http://localhost:8080/static/resume.pdf', {
+      axios.get('https://skols.herokuapp.com/static/resume.pdf', {
         responseType: 'blob',
       }).then(response => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -239,7 +239,7 @@ p {
 
   .copied {
     position: relative;
-    left: -180px;
+    left: -100px;
     opacity: 0;
     font-family: $header-font;
     color: $heading-color;

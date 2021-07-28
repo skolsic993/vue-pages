@@ -20,7 +20,7 @@
         <div class="svg-image row mt-5">
           <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
             <div data-w-id="24a1979e-d557-8cdc-aefe-c0d1783a993d" class="holder-with-border holder-with-border-64" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-              <p style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="sub-title-new">
+              <p class="paragraph sub-title-new">
                 Hello! My name is Milos and I enjoy creating things that live on the internet. My interest in web development started back in 2014 when I decided to make a navigation system for intersections with
                 JavaScipt — turns out that hacking is my passion and I decide to continue!<br>
                 </p><div style="opacity: 1;" class="blue-separator"></div>
