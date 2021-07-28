@@ -1,5 +1,5 @@
 <template>
-  <section class="cards-section p-5">
+  <section class="cards-section">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
@@ -51,6 +51,7 @@ export default {
 @import "./../assets/scss/variables.scss";
 
 .cards-section {
+  padding: 30px 30px 0 30px;
   background-color: $dark;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 0;

@@ -293,6 +293,10 @@ export default {
   
   .svg-image {
 
+    @media (max-width: 500px) {
+      margin-top: 30px !important;
+    }
+
     .text {
       color: $light-text;
       margin: 40px 0;
@@ -313,6 +317,10 @@ export default {
       overflow: hidden;
       cursor: pointer;
       height: 80px;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
 
       &::after{
         background: #fff;
