@@ -229,6 +229,20 @@ nav {
         }
       }
 
+      .router-link-active, .router-link-exact-active {
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: $pink;
+        transform-origin: right;
+        transition: transform 0.5s;
+        transform: scaleX(1) !important;
+        transform-origin: left !important;
+      }
+
       a {
         position: relative;
         display: block;
