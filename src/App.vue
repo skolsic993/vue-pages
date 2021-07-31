@@ -2,12 +2,14 @@
 <body>
   <div>
     <Navbar />
-    <transition 
-    mode="out-in"
-    enter-active-class="animate__animated animate__fadeIn"
-    leave-active-class="animate__animated animate__fadeOut">
-      <router-view></router-view>
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition
+      mode="out-in"
+      enter-active-class="animate__animated animate__fadeIn"
+      leave-active-class="animate__animated animate__fadeOut">
+      <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </body>
 </template>
@@ -45,7 +47,7 @@ body {
 }
 
 .animate__animated{
-  --animate-duration: 3s;
+  --animate-duration: 1.5s;
 }
 
 .fade-enter-active,
@@ -53,10 +55,6 @@ body {
   transition-duration: 1s;
   transition-property: opacity;
   transition-timing-function: ease-in;
-}
-
-.fade-enter-active {
-  transition-delay: .5s;
 }
 
 .fade-enter,

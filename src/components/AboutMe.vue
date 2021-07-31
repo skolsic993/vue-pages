@@ -10,7 +10,7 @@
       <div class="col-sm-12 col-md-6 col-lg-6">
         <p>
           Hello again! I am a very motivated developer who is always looking for a new challenge. I am capable of working with a
-          variety of technologies and software. My main focus these days is creating <bold>bold</bold>, unique, and amazing experiences
+          variety of technologies and software. My main focus these days is creating <strong>bold</strong>, unique, and amazing experiences
           that help your business growth and much more!<br><br>
           The valuable team member who has experience diagnosing problems and developing solutions. 
           I spend my free time playing sport (especially cycling) and video games.
@@ -43,7 +43,7 @@ export default {
   name: "AboutMe",
   methods: {
     download() {
-      axios.get('https://skols.herokuapp.com/static/resume.pdf', {
+      axios.get('http://localhost:8080/static/resume.pdf', {
         responseType: 'blob',
       }).then(response => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
