@@ -14,6 +14,14 @@ export default {
   components: {
     AboutMeCards,
     AboutMe
+  },
+  created: function(){
+    this.onCreated();
+  },
+  watch: {
+    '$route' () {
+      this.onCreated();
+    }
   }
 };
 </script>

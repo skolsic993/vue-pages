@@ -15,6 +15,14 @@ export default {
     Work,
     Cards
   },
+  created: function(){
+    this.onCreated();
+  },
+  watch: {
+    '$route' () {
+      this.onCreated();
+    }
+  }
 };
 </script>
 
