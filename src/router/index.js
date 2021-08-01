@@ -21,7 +21,7 @@ const routes = [
       import("../views/Projects.vue"),
   },
   { 
-    path: '*', 
+    path: "/:pathMatch(.*)*", 
     redirect: '/not-found' 
   },
   {
