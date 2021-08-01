@@ -374,7 +374,7 @@ export default {
           font-family: $weird-font;
           margin-bottom: 1rem;
           letter-spacing: 1px;
-          color: #ccf2ff;
+          color: #fff;
           line-height: 30px;
           font-weight: 300;
         }

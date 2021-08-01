@@ -71,7 +71,7 @@
         </h5></slot>
         <slot name="content">
             <ul>
-                <li>Visual Studio</li><li>GitHub</li><li>Chrome Developer Tools</li><li>PhpStorm</li><li>WebStorm</li><li>SCRUM / Agile Methodologies</li>
+                <li>Visual Studio</li><li>GitHub</li><li>Chrome Developer Tools</li><li>PhpStorm</li><li>WebStorm</li><li>SCRUM</li>
             </ul>
         </slot>
       </div>

@@ -215,7 +215,7 @@ export default {
 
 .sub-title-new {
   margin-bottom: 0;
-  color: $color-cover;
+  color: #fff;
   line-height: 30px;
   font-weight: 300;
 }
