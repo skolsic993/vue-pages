@@ -25,11 +25,6 @@
 
 export default {
   name: "NotFound",
-  computed: {
-    routeName() {
-      return this.$route.name
-    },
-  }
 };
 </script>
 
