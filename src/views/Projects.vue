@@ -15,6 +15,11 @@ export default {
     Work,
     Cards
   },
+  computed: {
+    routeName() {
+      return this.$route.name
+    },
+  }
 };
 </script>
 
