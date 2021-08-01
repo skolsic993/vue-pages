@@ -43,7 +43,7 @@ export default {
   name: "AboutMe",
   methods: {
     download() {
-      axios.get('https://skols.herokuapp.com/static/resume.pdf', {
+      axios.get('https://milosstojsavljevic.netlify.app/static/resume.pdf', {
         responseType: 'blob',
       }).then(response => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
