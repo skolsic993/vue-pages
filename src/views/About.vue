@@ -14,11 +14,6 @@ export default {
   components: {
     AboutMeCards,
     AboutMe
-  },
-  computed: {
-    routeName() {
-      return this.$route.name
-    },
   }
 };
 </script>
