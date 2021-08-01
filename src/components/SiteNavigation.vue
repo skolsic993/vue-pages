@@ -9,7 +9,7 @@
 <div class="overlay"></div>
 <nav class="nav">
   <ul>
-    <li><router-link to="/" class="links">Home</router-link></li>
+    <li><router-link to="/" class="links" :class="{ 'link-active': $route.path == '/index.html' }">Home</router-link></li>
     <li><router-link to="/projects" class="links">Projects</router-link></li>
     <li><router-link to="/about" class="links">About</router-link></li>
   </ul>
@@ -49,6 +49,20 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+}
+
+.link-active {
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: $pink;
+  transform-origin: right;
+  transition: transform 0.5s;
+  transform: scaleX(1) !important;
+  transform-origin: left !important;
 }
 
 nav {

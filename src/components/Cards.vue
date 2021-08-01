@@ -284,6 +284,7 @@ svg {
 }
 
 .card-info {
+  width: 100%;
   padding: 5px;
   font-family: $header-font;
   font-size: 1rem;

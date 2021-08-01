@@ -20,10 +20,15 @@ const routes = [
       import("../views/Projects.vue"),
   },
   {
+    path: "/:pathMatch(.*)*",
+    redirect: "/index.html",
+  },
+  {
     path: "/index.html",
+    name: "NotFound",
     component: () =>
       import("../views/Home.vue"),
-  }
+  },
 ];
 
 const router = createRouter({
