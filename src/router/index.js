@@ -21,7 +21,7 @@ const routes = [
       import("../views/Projects.vue"),
   },
   {
-    path: 'https://milosstojsavljevic.netlify.app/:pathMatch(.*)*',
+    path: '/:pathMatch(.*)*',
     name: "NotFound",
     component: NotFound,
   }
