@@ -2,7 +2,7 @@
 <body>
   <div>
     <Navbar />
-    <router-view v-slot="{ Component }">
+    <router-view :key="$route.fullPath" v-slot="{ Component }">
       <transition
       mode="out-in"
       enter-active-class="animate__animated animate__fadeIn"
